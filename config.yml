@@ -1,0 +1,4 @@
+settings-file: NOT FOUND
+seriously:
+  confg-file: /etc/homedepot/config/envconfig.yml
+  file-status: missing

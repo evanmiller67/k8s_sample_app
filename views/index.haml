@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Sample Spinnaker Deploy App
+  %body
+    %h1 Hello World!
+    %h2
+      Welcome from:
+      %ul.settings
+        - @settings.each do |k,v|
+          - if v.is_a?(String)
+            %li{:style => "color: blue"}
+              #{k}: #{v}
+          -else
+            %li{:style => "color: red"}
+              #{k}:
+              %ul.nested
+                - v.each do |key,value|
+                  %li{:style => "color: red"}
+                    #{key}: #{value}
+
